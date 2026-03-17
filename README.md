@@ -43,7 +43,7 @@ cd nautobot-docker-compose
 3. Build Poetry Environment
 
 ```bash
-poetry shell
+poetry env activate
 poetry lock
 poetry install
 ```
@@ -74,16 +74,16 @@ chmod 0600 environments/local.env environments/creds.env
 cp invoke.example.yml invoke.yml
 ```
 
-8. Run `invoke build` to build the containers.
+8. Run `poetry run invoke build` to build the containers.
 
 ```bash
-invoke build
+poetry run invoke build
 ```
 
-9. Run `invoke debug` to start the containers in debug mode or `invoke start` to run as a background process.
+9. Run `poetry run invoke debug` to start the containers in debug mode or `poetry run invoke start` to run as a background process.
 
 ```bash
-invoke debug
+poetry run invoke debug
 ```
 
 ## Install Docker
@@ -94,7 +94,7 @@ Before beginning, install Docker and verify its operation by running `docker run
 
 It is recommended to follow one of the [installation methods detailed in their documentation](https://python-poetry.org/docs/#installation).  It's advised to install poetry as a system-level dependency and not inside a virtual environment.  Once Poetry has been installed you can create the Poetry virtual environment with a few simple commands:
 
-1. `poetry shell`
+1. `poetry env activate` (For version 1.x.x, use `poetry shell`)
 2. `poetry lock`
 3. `poetry install`
 
@@ -104,8 +104,8 @@ The last command, `poetry install`, will install all of the project dependencies
 
 You can build, deploy and populate Nautobot with the following steps
 
-1. `invoke build`
-2. `invoke start` or `invoke debug`
+1. `poetry run invoke build`
+2. `poetry run invoke start` or `poetry run invoke debug`
 
 > The standard way of starting the containers is to use `invoke start`. If you wish to see the logs from the containers while running Nautobot use the `invoke debug` command. Be aware that exiting debug mode will stop all the containers.
 
@@ -113,10 +113,10 @@ Nautobot will be available on port 8080 locally http://localhost:8080
 
 ## Cleanup Everything and start from scratch
 
-1. `invoke destroy`
-2. `invoke build`
-3. `invoke db-import`
-4. `invoke start`
+1. `poetry run invoke destroy`
+2. `poetry run invoke build`
+3. `poetry run invoke db-import`
+4. `poetry run invoke start`
 
 > The `invoke db-import` command will only work if you have a previous backup of your database.
 
@@ -157,7 +157,7 @@ cp environments/creds.example.env environments/creds.env
 
 The project comes with a CLI helper based on [invoke](http://www.pyinvoke.org/) to help manage the Nautobot environment. The commands are listed below in 2 categories `environment` and `utility`.
 
-Each command can be executed with a simple `invoke <command>`. Each command also has its own help `invoke <command> --help`.
+Each command can be executed with a simple `poetry run invoke <command>`. Each command also has its own help `poetry run invoke <command> --help`.
 
 ### Manage Nautobot environment
 
@@ -225,7 +225,7 @@ ad57ac1749b3   redis:alpine                    "docker-entrypoint.s…"   2 minu
 2. Execute Create Super User Command and follow the prompts
 
 ```bash
-invoke createsuperuser
+poetry run invoke createsuperuser
 ```
 
 Example Prompts:
