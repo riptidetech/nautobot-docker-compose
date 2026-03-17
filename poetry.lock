@@ -1093,6 +1093,21 @@ django = ">=3.2"
 jinja2 = ">=3"
 
 [[package]]
+name = "django-pivot"
+version = "1.9.0"
+description = "Create pivot tables and histograms from ORM querysets"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django-pivot-1.9.0.tar.gz", hash = "sha256:5e985d32d9ff2a6b89419dd0292c0fa2822d494ee479b5fd16cdb542abf66a88"},
+    {file = "django_pivot-1.9.0-py3-none-any.whl", hash = "sha256:1c60e18e7d5f7e42856faee0961748082ddd05b01ae7c8a4baed64d2bbacd051"},
+]
+
+[package.dependencies]
+django = ">=2.2.0"
+
+[[package]]
 name = "django-prometheus"
 version = "2.4.1"
 description = "Django middlewares to monitor your application with Prometheus.io."
@@ -1680,6 +1695,21 @@ files = [
     {file = "h11-0.16.0-py3-none-any.whl", hash = "sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"},
     {file = "h11-0.16.0.tar.gz", hash = "sha256:4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"},
 ]
+
+[[package]]
+name = "hier-config"
+version = "3.4.1"
+description = "A network configuration query and comparison library, used to build remediation configurations."
+optional = false
+python-versions = "<4.0,>=3.10.0"
+groups = ["main"]
+files = [
+    {file = "hier_config-3.4.1-py3-none-any.whl", hash = "sha256:88215cf971fdb38032f3ee438b6a7d8926f6cfe8e340239524019b263734425c"},
+    {file = "hier_config-3.4.1.tar.gz", hash = "sha256:f9606f30d78e682206bd55137e681c1fc35d3dda3bc913893e36d89865bc3d12"},
+]
+
+[package.dependencies]
+pydantic = ">=2.9,<3.0"
 
 [[package]]
 name = "httpcore"
@@ -2575,6 +2605,29 @@ netutils = ">=1.9.1,<2.0.0"
 ntc-templates = ">=7.0.0,<8.0.0"
 ttp = ">=0.9.0,<0.10.0"
 zipp = ">=3.4.0,<4.0.0"
+
+[[package]]
+name = "nautobot-golden-config"
+version = "3.0.3"
+description = "An app for configuration on nautobot"
+optional = false
+python-versions = "<3.14,>=3.10"
+groups = ["main"]
+files = [
+    {file = "nautobot_golden_config-3.0.3-py3-none-any.whl", hash = "sha256:a24269cf0676218d9bb2667c7055cdc64ad4892cebe0018b4b67366acd0a9054"},
+    {file = "nautobot_golden_config-3.0.3.tar.gz", hash = "sha256:bdf9322946bf3e140cf3955a0fcf7d82a27da17146f8619eae6aa403596bf860"},
+]
+
+[package.dependencies]
+deepdiff = ">=8.6.1,<9.0.0"
+django-pivot = ">=1.9.0,<1.10.0"
+hier-config = ">=3.4.1,<4.0.0"
+nautobot = ">=3.0.0,<4.0.0"
+nautobot-capacity-metrics = ">=4.0.0,<5.0.0"
+nautobot-plugin-nornir = ">=3.0.0,<4.0.0"
+netutils = ">=1.17.0,<2.0.0"
+toml = ">=0.10.2,<0.11.0"
+xmldiff = ">=2.6.3,<3.0.0"
 
 [[package]]
 name = "nautobot-plugin-nornir"
@@ -4548,7 +4601,7 @@ version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-groups = ["dev"]
+groups = ["main", "dev"]
 files = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
@@ -4766,6 +4819,25 @@ optional = ["python-socks", "wsaccel"]
 test = ["pytest", "websockets"]
 
 [[package]]
+name = "xmldiff"
+version = "2.7.0"
+description = "Creates diffs of XML files"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "xmldiff-2.7.0-py3-none-any.whl", hash = "sha256:c8020e6aa4aa9fa13c72e5bf0eeafd0be998b0ab55d78b008abc75fbfebaca27"},
+    {file = "xmldiff-2.7.0.tar.gz", hash = "sha256:c0910b1f800366dd7ec62923e5d06e8b06a1bd9120569a1c27f4f2446b9c68a2"},
+]
+
+[package.dependencies]
+lxml = ">=3.1.0"
+setuptools = "*"
+
+[package.extras]
+devenv = ["black", "coverage", "flake8", "zest.releaser[recommended]"]
+
+[[package]]
 name = "yamlloader"
 version = "1.6.0"
 description = "Ordered YAML loader and dumper for PyYAML."
@@ -4951,4 +5023,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.14"
-content-hash = "56d36273f72089346ff9cbca3de6e080fc1bac2d05debd3f6dc51ee50a947063"
+content-hash = "e3e9f01ac194b4ac9b33437e7e795eeb223e6220c32f703fe82636ed0f567385"

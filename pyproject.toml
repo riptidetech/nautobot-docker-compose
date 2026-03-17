@@ -14,6 +14,7 @@ nautobot = "3.0.8"
 nautobot-chatops = "^4.0.0"
 nautobot-ssot = "^4.1.0"
 nautobot-device-onboarding = "^5.2.1"
+nautobot-golden-config = "^3.0.3"
 
 [tool.poetry.group.dev.dependencies]
 invoke = "*"
