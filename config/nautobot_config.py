@@ -40,7 +40,8 @@ PLUGINS = [
     "nautobot_ssot",
     "nautobot_device_onboarding",
     "nautobot_golden_config",
-    "nautobot_device_lifecycle_mgmt"
+    "nautobot_device_lifecycle_mgmt",
+    "nautobot_firewall_models"
     ]
 
 # Plugins configuration settings. These settings are used by various plugins that the user may have installed.
