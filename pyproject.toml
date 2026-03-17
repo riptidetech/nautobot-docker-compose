@@ -11,6 +11,9 @@ python = ">=3.10,<3.14"
 nautobot = "3.0.8"
 
 # nautobot-example-plugin = {path = "plugins/plugin_example", develop = true}
+nautobot-chatops = "^4.0.0"
+nautobot-ssot = "^4.1.0"
+nautobot-device-onboarding = "^5.2.1"
 
 [tool.poetry.group.dev.dependencies]
 invoke = "*"
