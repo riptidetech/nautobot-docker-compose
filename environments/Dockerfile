@@ -1,6 +1,6 @@
 ARG NAUTOBOT_VERSION
 ARG PYTHON_VER
-FROM ghcr.io/nautobot/nautobot:${NAUTOBOT_VERSION}-py${PYTHON_VER} as nautobot-base
+FROM ghcr.io/nautobot/nautobot:${NAUTOBOT_VERSION}-py${PYTHON_VER} AS nautobot-base
 
 USER 0
 
@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     pip --no-cache-dir install --upgrade pip wheel
 
-FROM ghcr.io/nautobot/nautobot-dev:${NAUTOBOT_VERSION}-py${PYTHON_VER} as builder
+FROM ghcr.io/nautobot/nautobot-dev:${NAUTOBOT_VERSION}-py${PYTHON_VER} AS builder
 
 CMD ["nautobot-server", "runserver", "0.0.0.0:8080", "--insecure"]
 
@@ -53,7 +53,7 @@ WORKDIR /source
 # -------------------------------------------------------------------------------------
 # Final Image
 # -------------------------------------------------------------------------------------
-FROM nautobot-base as nautobot
+FROM nautobot-base AS nautobot
 
 ARG PYTHON_VER
 # Copy from base the required python libraries and binaries
