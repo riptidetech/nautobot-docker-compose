@@ -3136,6 +3136,21 @@ servicenow = ["Jinja2 (>=2.11.3)", "PyYAML (>=6)", "ijson (>=2.5.1)", "oauthlib 
 slurpit = ["slurpit-sdk (==0.9.107)"]
 
 [[package]]
+name = "nautobot-welcome-wizard"
+version = "3.0.0"
+description = "Nautobot's Getting Started Wizard"
+optional = false
+python-versions = "<3.14,>=3.10"
+groups = ["main"]
+files = [
+    {file = "nautobot_welcome_wizard-3.0.0-py3-none-any.whl", hash = "sha256:cb4d434983702445e55012fd2e0ef9970d786357976ec6ecfa26930f13cfae6d"},
+    {file = "nautobot_welcome_wizard-3.0.0.tar.gz", hash = "sha256:b37f27e3a2c4690a69ff05decb6f553b0ec390da021e8f3fdd16287e14e5cab7"},
+]
+
+[package.dependencies]
+nautobot = ">=3.0.0,<4.0.0"
+
+[[package]]
 name = "ncclient"
 version = "0.7.0"
 description = "Python library for NETCONF clients"
@@ -5550,4 +5565,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.14"
-content-hash = "2bd7a63136e3d3b5e72a5776215f93411c78ddc749551dae390b30eee3dd4a3c"
+content-hash = "6fff452b3a95b4ad4752569ad71f5812ed825d9de92687139afdc7aaa7a34d47"
