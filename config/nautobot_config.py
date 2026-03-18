@@ -36,15 +36,20 @@ CACHEOPS_REDIS = parse_redis_connection(redis_database=1)
 # Enable installed plugins. Add the name of each plugin to the list.
 # PLUGINS = ["nautobot_example_plugin"]
 PLUGINS = [
-    "nautobot_plugin_nornir",
-    "nautobot_ssot",
-    "nautobot_device_onboarding",
-    "nautobot_golden_config",
+    # Network to Code plugins
+    "welcome_wizard",                   # a plugin to help new user populate their instance with common foundational data
+    "nautobot_plugin_nornir",           # deals with the inventory where you have your host information
+    "nautobot_ssot",                    # single source of truth module
+    "nautobot_device_onboarding",       # use NAPALM and NetMiko to onboard devices into Nautobot
+    "nautobot_golden_config",           # compare active configs with golden configs
     "nautobot_device_lifecycle_mgmt",
-    "nautobot_firewall_models"
+    "nautobot_firewall_models",
+
+    # External plugins
+
     ]
 
-# Plugins configuration settings. These settings are used by various plugins that the user may have installed.
+# Plugins configuration settings is a dictionary of settings. These settings are used by various plugins that the user may have installed.
 # Each key in the dictionary is the name of an installed plugin and its value is a dictionary of settings.
 PLUGINS_CONFIG = {
     "nautobot_example_plugin": {},
@@ -59,6 +64,12 @@ PLUGINS_CONFIG = {
                 },
             }
         },
+    },
+    "welcome_wizard": {
+        "enable_devicetype-library": True,
+        "enable_welcome_banner": True,
+        "manufacturer_transform_func": None,
+        "manufacturer_map": {},
     },
     # "nautobot_chatops": {},
 }
