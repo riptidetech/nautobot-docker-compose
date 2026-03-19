@@ -71,5 +71,12 @@ PLUGINS_CONFIG = {
         "manufacturer_transform_func": None,
         "manufacturer_map": {},
     },
+    "nautobot_device_onboarding": {
+        "create_platform_if_missing": True,
+        "create_manufacturer_if_missing": True,
+        "create_device_type_if_missing": True,
+        "create_device_role_if_missing": True,
+        "default_device_role": "network",
+    }
     # "nautobot_chatops": {},
 }
