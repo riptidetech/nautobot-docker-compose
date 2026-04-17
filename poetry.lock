@@ -279,14 +279,14 @@ files = [
 
 [[package]]
 name = "attrs"
-version = "25.4.0"
+version = "26.1.0"
 description = "Classes Without Boilerplate"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "attrs-25.4.0-py3-none-any.whl", hash = "sha256:adcf7e2a1fb3b36ac48d97835bb6d8ade15b8dcce26aba8bf1d14847b57a3373"},
-    {file = "attrs-25.4.0.tar.gz", hash = "sha256:16d5969b87f0859ef33a48b35d55ac1be6e42ae49d5e853b597db70c35c57e11"},
+    {file = "attrs-26.1.0-py3-none-any.whl", hash = "sha256:c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"},
+    {file = "attrs-26.1.0.tar.gz", hash = "sha256:d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32"},
 ]
 
 [[package]]
@@ -970,14 +970,14 @@ tests = ["pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
 name = "deepdiff"
-version = "8.6.1"
+version = "8.6.2"
 description = "Deep Difference and Search of any Python object/data. Recreate objects by adding adding deltas to each other."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "deepdiff-8.6.1-py3-none-any.whl", hash = "sha256:ee8708a7f7d37fb273a541fa24ad010ed484192cd0c4ffc0fa0ed5e2d4b9e78b"},
-    {file = "deepdiff-8.6.1.tar.gz", hash = "sha256:ec56d7a769ca80891b5200ec7bd41eec300ced91ebcc7797b41eb2b3f3ff643a"},
+    {file = "deepdiff-8.6.2-py3-none-any.whl", hash = "sha256:4d22034a866c3928303a9332c279362f714192d9305bac17c498720d095fd1b4"},
+    {file = "deepdiff-8.6.2.tar.gz", hash = "sha256:186dcbd181e4d76cef11ab05f802d0056c5d6083c5a6748c1473e9d7481e183e"},
 ]
 
 [package.dependencies]
@@ -1006,14 +1006,14 @@ files = [
 
 [[package]]
 name = "diffsync"
-version = "2.2.2"
+version = "2.2.3"
 description = "Library to easily sync/diff/update 2 different data sources"
 optional = false
 python-versions = "<3.14,>=3.10"
 groups = ["main"]
 files = [
-    {file = "diffsync-2.2.2-py3-none-any.whl", hash = "sha256:d80a867415bb4a4cc83887b8fc0c02bd3d36b9aed2bd7aafddf5b5034e69b2fa"},
-    {file = "diffsync-2.2.2.tar.gz", hash = "sha256:379ef12bf515d2dbbd42c2696fa2f78e015c464d6df867f9768d1f0f6286befe"},
+    {file = "diffsync-2.2.3-py3-none-any.whl", hash = "sha256:dfc0018822c024cccf9cc0c0f688d84a65c52ea0a96b67b60261748dd11c1e8c"},
+    {file = "diffsync-2.2.3.tar.gz", hash = "sha256:4fe22ccfff783409eee2801513d51adabd2afcc5162e0f55f26d7ea9f8395115"},
 ]
 
 [package.dependencies]
@@ -1895,14 +1895,14 @@ files = [
 
 [[package]]
 name = "hier-config"
-version = "3.4.1"
+version = "3.5.1"
 description = "A network configuration query and comparison library, used to build remediation configurations."
 optional = false
 python-versions = "<4.0,>=3.10.0"
 groups = ["main"]
 files = [
-    {file = "hier_config-3.4.1-py3-none-any.whl", hash = "sha256:88215cf971fdb38032f3ee438b6a7d8926f6cfe8e340239524019b263734425c"},
-    {file = "hier_config-3.4.1.tar.gz", hash = "sha256:f9606f30d78e682206bd55137e681c1fc35d3dda3bc913893e36d89865bc3d12"},
+    {file = "hier_config-3.5.1-py3-none-any.whl", hash = "sha256:1a2790094e3b3a1e59c8cb0bea591555670dbae44650369022cedbcd6df4acde"},
+    {file = "hier_config-3.5.1.tar.gz", hash = "sha256:f7d1b5cda12e51a6b961726450e801cc6f751209ba0618c3132da2a4f17d28fb"},
 ]
 
 [package.dependencies]
@@ -3024,14 +3024,14 @@ pycountry = ">=22.3.5,<23.0.0"
 
 [[package]]
 name = "nautobot-device-onboarding"
-version = "5.2.1"
+version = "5.2.2"
 description = "A app for Nautobot to easily onboard new devices."
 optional = false
 python-versions = "<3.14,>=3.10"
 groups = ["main"]
 files = [
-    {file = "nautobot_device_onboarding-5.2.1-py3-none-any.whl", hash = "sha256:e178fb5cd55a69f13a0b2d5eec946efe31d301a241f7bc1eb0937f675f5c99f8"},
-    {file = "nautobot_device_onboarding-5.2.1.tar.gz", hash = "sha256:be6f293f54c7247f2d73c678fcede4fb83dd150b05160e3701394cde8718bc2e"},
+    {file = "nautobot_device_onboarding-5.2.2-py3-none-any.whl", hash = "sha256:4918fce9597b58354900a76048a42501352a0a4836c4c8184bc72c7ba71b8077"},
+    {file = "nautobot_device_onboarding-5.2.2.tar.gz", hash = "sha256:db91f63ba18bf68bbb3f29ea1669a6c3f7af62745463e0f02ea264963ca1a1c7"},
 ]
 
 [package.dependencies]
@@ -3041,7 +3041,7 @@ nautobot = ">=3.0.0,<4.0.0"
 nautobot-plugin-nornir = ">=3.0.0,<4.0.0"
 nautobot-ssot = ">=4.0.0,<5.0.0"
 netutils = ">=1.9.1,<2.0.0"
-ntc-templates = ">=7.0.0,<8.0.0"
+ntc-templates = ">=7.0.0"
 ttp = ">=0.9.0,<0.10.0"
 zipp = ">=3.4.0,<4.0.0"
 
@@ -3378,18 +3378,18 @@ nornir = ">=3,<4"
 
 [[package]]
 name = "ntc-templates"
-version = "7.9.0"
+version = "9.0.0"
 description = "TextFSM Templates for Network Devices, and Python wrapper for TextFSM's CliTable."
 optional = false
-python-versions = "<4.0,>=3.8"
+python-versions = "<4.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "ntc_templates-7.9.0-py3-none-any.whl", hash = "sha256:44ae2651719592bb70e98886f363b15bab12892b37f8338f0a2255aa5c7b6ee3"},
-    {file = "ntc_templates-7.9.0.tar.gz", hash = "sha256:df4b4520c3dd41b33ad0746ea7742c63b13eb2860579c7648c348167af5432e2"},
+    {file = "ntc_templates-9.0.0-py3-none-any.whl", hash = "sha256:1eb3a94a090aa83004c8e781e05210200c583505a4d86dcd71ead93e3a472834"},
+    {file = "ntc_templates-9.0.0.tar.gz", hash = "sha256:eb4a6f55a02be3db284e4da470907f52f0dd04ef2c721e6f031c2128c9fbcb98"},
 ]
 
 [package.dependencies]
-textfsm = ">=1.1.0,<2.0.0"
+textfsm = ">=1.1.0"
 
 [[package]]
 name = "numpy"
@@ -5111,19 +5111,15 @@ files = [
 
 [[package]]
 name = "textfsm"
-version = "1.1.3"
+version = "2.1.0"
 description = "Python module for parsing semi-structured text into python tables."
 optional = false
 python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "textfsm-1.1.3-py2.py3-none-any.whl", hash = "sha256:dcbeebc6a6137bed561c71a56344d752e6dbc04ae5ea309252cb70fb97ccc9cd"},
-    {file = "textfsm-1.1.3.tar.gz", hash = "sha256:577ef278a9237f5341ae9b682947cefa4a2c1b24dbe486f94f2c95addc6504b5"},
+    {file = "textfsm-2.1.0-py2.py3-none-any.whl", hash = "sha256:55886490474890fa09ade0e8c9555a913fd325724842293364dc44ea705b3616"},
+    {file = "textfsm-2.1.0.tar.gz", hash = "sha256:45c18ff2b7c90163dfdff7e20d3f482514cc7aac26bc2547744e79dfa761e458"},
 ]
-
-[package.dependencies]
-future = "*"
-six = "*"
 
 [[package]]
 name = "texttable"
@@ -5565,4 +5561,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.14"
-content-hash = "6fff452b3a95b4ad4752569ad71f5812ed825d9de92687139afdc7aaa7a34d47"
+content-hash = "9d8c50985d63e3768220cfd44bbbcf0cd95799974ce8e2a12d1d219688bb45dc"

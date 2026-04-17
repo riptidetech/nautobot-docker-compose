@@ -18,6 +18,7 @@ nautobot-golden-config = "^3.0.3"
 nautobot-device-lifecycle-mgmt = "^4.0.1"
 nautobot-firewall-models = "^3.0.0"
 nautobot-welcome-wizard = "^3.0.0"
+diffsync = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 invoke = "*"
